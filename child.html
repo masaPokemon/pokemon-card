@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-168604252-1');
+  </script>
+
+  <meta charset="utf-8">
+  <title>リモート対戦用ウィンドウ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=yes">
+  <meta name="description" content="ポケモンカードの1人回し用のツールです。">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout_child.css?20220714">
+  <script type="text/javascript" src="js/script_child.js?20210713"></script>
+</head>
+
+<body>
+  <main>
+    <div class="fieldWrap">
+      <div class="fieldArea" onContextmenu="return false;">
+        <div id="information">
+          <p>この画面は対戦相手に配信する為の画面です。</p>
+          <p>ウィンドウの最小化してしまうと配信が止まってしまうので、最小化せずに裏画面に置いて画面配信してください。</p>
+        </div>
+        <div id="p1_side" class="sideWrap">
+          <div id="p1_free_space" class="boxLayout01">
+            <p class="boxTitle">FREE<a id="p1_free_space_open" class="btn01">カード公開中</a></p>
+            <!-- <div class="btnWrap">
+              <a id="p1_p1_free_space_reverse" class="btn01">カードを裏返す</a>
+              <a id="p1_p1_free_space_move_to_top" class="btn01">デッキトップ</a>
+              <a id="p1_p1_free_space_move_to_bottom" class="btn01">デッキボトム</a>
+            </div> -->
+            <ul id="p1_free_space_wrap" class="cardWrap ">
+            </ul>
+          </div>
+          <div id="p1_side_child" class="sideArea boxLayout01">
+            <p class="boxTitle">side</p>
+            <ul id="p1_side_wrap" class="cardWrap ">
+            </ul>
+          </div>
+          <div id="p1_GX" class="gxMark">Vstar</div>
+        </div>
+        <div class="battleWrap">
+          <div id="p1_studium" class="studiumWrap boxLayout01">
+            <div id="p1_studium_bg" class="bgLayout"></div>
+            <p class="boxTitle">stadium</p>
+            <div class="btnWrap">
+            </div>
+            <ul id="stadium_wrap" class="cardWrap">
+            </ul>
+            </ul>
+          </div>
+          <div id="p1_battle" class="battleArea boxLayout01">
+            <div id="p1_battle_bg" class="bgLayout"></div>
+            <div class="boxTitle">battle
+              <div class="btnWrap">
+                <input id="p1_battle_damage_box" type="tel" name="num" class="damageBox">
+                <a id="p1_burn" class="btn01 burn">やけど</a>
+                <a id="p1_poison" class="btn01 poison">どく</a>
+                <a id="p1_sleeping" class="btn01 sleeping">ねむり</a>
+                <a id="p1_paralysis" class="btn01 paralysis">まひ</a>
+                <a id="p1_confusion" class="btn01 confusion">こんらん</a>
+              </div>
+            </div>
+            <ul id="p1_battle_wrap" class="cardWrap ">
+            </ul>
+          </div>
+          <div id="p1_lostzone" class="lostArea boxLayout01">
+            <div class="boxTitle">lost
+            </div>
+            <ul id="p1_lostzone_wrap" class="cardWrap ">
+            </ul>
+          </div>
+          <div class="coinWrap boxLayout01">
+            <p class="boxTitle">coin</p>
+            <div class="btnWrap">
+              <img id="coin" class="coinBack" src="img/coin.png" alt="coincheck!">
+            </div>
+          </div>
+        </div>
+        <div id="p1_bench" class="benchWrap">
+          <div id="p1_bench1" class="benchArea boxLayout01">
+            <div id="p1_bench1_bg" class="bgLayout"></div>
+            <p class="boxTitle">bench 1<input id="p1_bench1_damage_box" type="tel" name="num" class="damageBox"></p>
+            <ul id="p1_bench1_wrap" class="cardWrap ">
+            </ul>
+          </div>
+          <div id="p1_bench2" class="benchArea boxLayout01">
+            <div id="p1_bench2_bg" class="bgLayout"></div>
+            <p class="boxTitle">bench 2<input id="p1_bench2_damage_box" type="tel" name="num" class="damageBox"></p>
+            <ul id="p1_bench2_wrap" class="cardWrap ">
+            </ul>
+          </div>
+          <div id="p1_bench3" class="benchArea boxLayout01">
+            <div id="p1_bench3_bg" class="bgLayout"></div>
+            <p class="boxTitle">bench 3<input id="p1_bench3_damage_box" type="tel" name="num" class="damageBox"></p>
+            <ul id="p1_bench3_wrap" class="cardWrap ">
+            </ul>
+          </div>
+          <div id="p1_bench4" class="benchArea boxLayout01">
+            <div id="p1_bench4_bg" class="bgLayout"></div>
+            <p class="boxTitle">bench 4<input id="p1_bench4_damage_box" type="tel" name="num" class="damageBox"></p>
+            <ul id="p1_bench4_wrap" class="cardWrap ">
+            </ul>
+          </div>
+          <div id="p1_bench5" class="benchArea boxLayout01">
+            <div id="p1_bench5_bg" class="bgLayout"></div>
+            <p class="boxTitle">bench 5<input id="p1_bench5_damage_box" type="tel" name="num" class="damageBox"></p>
+            <ul id="p1_bench5_wrap" class="cardWrap ">
+            </ul>
+          </div>
+          <div id="p1_bench6" class="benchArea boxLayout01" style="display:none">
+            <div id="p1_bench6_bg" class="bgLayout"></div>
+            <p class="boxTitle">bench 6<input id="p1_bench6_damage_box" type="tel" name="num" class="damageBox"></p>
+            <ul id="p1_bench6_wrap" class="cardWrap ">
+            </ul>
+          </div>
+          <div id="p1_bench7" class="benchArea boxLayout01" style="display:none">
+            <div id="p1_bench7_bg" class="bgLayout"></div>
+            <p class="boxTitle">bench 7<input id="p1_bench7_damage_box" type="tel" name="num" class="damageBox"></p>
+            <ul id="p1_bench7_wrap" class="cardWrap ">
+            </ul>
+          </div>
+          <div id="p1_bench8" class="benchArea boxLayout01" style="display:none">
+            <div id="p1_bench8_bg" class="bgLayout"></div>
+            <p class="boxTitle">bench 8<input id="p1_bench8_damage_box" type="tel" name="num" class="damageBox"></p>
+            <ul id="p1_bench8_wrap" class="cardWrap ">
+            </ul>
+          </div>
+        </div>
+        <div id="p1_hand" class="colLayout01">
+          <div class="handWrap">
+            <div id="p1_hand_area" class="handArea boxLayout01">
+              <p class="boxTitle">hand<a id="p1_hand_open" class="btn01 on">カード現在非公開</a></p>
+              <ul id="p1_hand_wrap" class="cardWrap ">
+              </ul>
+            </div>
+            <div id="p1_draw_area" class="drawArea boxLayout01">
+              <p class="boxTitle">draw</p>
+              <ul id="p1_draw_wrap" class="cardWrap ">
+              </ul>
+            </div>
+          </div>
+          <div id="p1_trash" class="trashWrap">
+            <div id="p1_trash_area" class="trashArea boxLayout01">
+              <p class="boxTitle">trash</p>
+              <ul id="p1_trash_wrap" class="cardWrap ">
+              </ul>
+            </div>
+          </div>
+          <div class="deckWrap">
+            <div id="deck_child" class="deckArea boxLayout01">
+              <p class="boxTitle">deck(残り)</p>
+              <div class="deckNokoriClass1">
+                <div id="deck_nokori" class="deckNokoriClass2">60</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="p1_deck" class="deckListWrap" style="display:none">
+          <div class="boxLayout01">
+            <p class="boxTitle">deck</p>
+            <ul id="p1_deck_wrap" class="cardWrap ">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="mask" class="hidden"></div>
+  <section id="modal" class="hidden">
+    <p>デッキ確認中</p>
+  </section>
+</body>
+
+</html>
